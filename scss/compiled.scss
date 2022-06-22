@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "variables";
+@import "general";
+@import "responsive";
+
+.sectionServices{
+    grid-area: services;
+    justify-content: center;
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        img {
+            padding: 10px;
+        }
+        }
+}
+
+.sectionDifference{
+    grid-area: difference;
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 40px;
+        div {
+            padding: 20px;
+        }
+    }
+}
+
+.sectionPortfolio{
+    grid-area: portfolio;
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+.port1 {
+    align-items: flex-start;
+    display: flex;
+    padding: 10px;
+}
+
+.port2 {
+    align-items: flex-end;
+    display: flex;
+    padding: 10px;
+}
+
+.port3 {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    input {
+        margin: 10px;
+        border: 1px solid $color1;
+        background-color: $color3;
+        padding: 10px;
+        height: 50px;
+    }
+}
+
+.sectionContact {
+    grid-area: contact;
+    display: flex;
+    flex-flow: column nowrap;
+    form {
+        align-self: center;
+        padding: 10px;
+        input {
+            border: 1px solid $color1;
+            background-color: $color3;
+            margin: 10px;
+            padding: 10px;
+            height: 50px;
+        }
+        textarea {
+            border: 1px solid $color1;
+            background-color: $color3;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+    }
+}
+
+.randomText {
+    max-width: 50%;
+    align-self: center;
+}
+
+
+

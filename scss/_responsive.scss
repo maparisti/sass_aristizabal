@@ -1,0 +1,107 @@
+/* Desktop */
+
+@media (min-widdth: 1024px) {
+
+    .mainPage {
+        display: grid;
+        grid-template-areas: 
+        "navigate"
+        "head"
+        "services"
+        "difference"
+        "portfolio"
+        "contact"
+        "foot";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 512px) and (max-width: 1023px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .mainPage {
+        display: grid;
+        grid-template-areas: 
+        "navigate"
+        "head"
+        "services"
+        "difference"
+        "portfolio"
+        "contact"
+        "foot";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    header  {
+        height: 300px;
+    }
+
+    .testImage {
+        max-width: 300px;
+    }
+
+    .randomText {
+        max-width: 100%;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 511px) {
+
+    .mainPage {
+        display: grid;
+        grid-template-areas: 
+        "navigate"
+        "head"
+        "services"
+        "difference"
+        "portfolio"
+        "contact"
+        "foot";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: flex;
+        padding: 10px;
+    }
+
+    .normalNav li, .normalNav {
+        display: none;
+        position: absolute;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .testImage {
+        max-width: 250px;
+    }
+
+    .randomText {
+        max-width: 100%;
+    }
+}

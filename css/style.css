@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F9F1;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  grid-area: navigate;
+}
+
+.nav-link:hover {
+  background-color: rgba(246, 178, 142, 0.4470588235);
+  color: #001C8B !important;
+}
+
+.nav-link:active {
+  background-color: rgba(0, 28, 139, 0.6117647059);
+  color: #F6B28E !important;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #001C8B;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #F6B28E;
+  padding: 20px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+header {
+  height: 500px;
+  background-image: url("../images/clouds-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: head;
+}
+
+footer {
+  grid-area: foot;
+  background-color: #001C8B;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+footer div {
+  align-self: center;
+}
+footer div p {
+  color: #F5F9F1;
+}
+
+/* Desktop */
+@media (min-widdth: 1024px) {
+  .mainPage {
+    display: grid;
+    grid-template-areas: "navigate" "head" "services" "difference" "portfolio" "contact" "foot";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}
+/* Tablet */
+@media (min-width: 512px) and (max-width: 1023px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 28px;
+    padding: 10px;
+  }
+  .mainPage {
+    display: grid;
+    grid-template-areas: "navigate" "head" "services" "difference" "portfolio" "contact" "foot";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  header {
+    height: 300px;
+  }
+  .testImage {
+    max-width: 300px;
+  }
+  .randomText {
+    max-width: 100%;
+  }
+}
+/* Phone */
+@media (max-width: 511px) {
+  .mainPage {
+    display: grid;
+    grid-template-areas: "navigate" "head" "services" "difference" "portfolio" "contact" "foot";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .burger {
+    display: flex;
+    padding: 10px;
+  }
+  .normalNav li, .normalNav {
+    display: none;
+    position: absolute;
+  }
+  header {
+    height: 200px;
+  }
+  .testImage {
+    max-width: 250px;
+  }
+  .randomText {
+    max-width: 100%;
+  }
+}
+.sectionServices {
+  grid-area: services;
+  justify-content: center;
+}
+.sectionServices div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sectionServices div img {
+  padding: 10px;
+}
+
+.sectionDifference {
+  grid-area: difference;
+}
+.sectionDifference article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+.sectionDifference article div {
+  padding: 20px;
+}
+
+.sectionPortfolio {
+  grid-area: portfolio;
+}
+.sectionPortfolio article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.port1 {
+  align-items: flex-start;
+  display: flex;
+  padding: 10px;
+}
+
+.port2 {
+  align-items: flex-end;
+  display: flex;
+  padding: 10px;
+}
+
+.port3 {
+  flex-flow: column wrap;
+  justify-content: space-around;
+  display: flex;
+  padding: 10px;
+}
+.port3 input {
+  margin: 10px;
+  border: 1px solid #001C8B;
+  background-color: #F5F9F1;
+  padding: 10px;
+  height: 50px;
+}
+
+.sectionContact {
+  grid-area: contact;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.sectionContact form {
+  align-self: center;
+  padding: 10px;
+}
+.sectionContact form input {
+  border: 1px solid #001C8B;
+  background-color: #F5F9F1;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+}
+.sectionContact form textarea {
+  border: 1px solid #001C8B;
+  background-color: #F5F9F1;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.randomText {
+  max-width: 50%;
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */
